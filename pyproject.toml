@@ -1,7 +1,7 @@
 [project]
-name = "python-uv-template"
+name = "smart-energy-assistant"
 version = "0.1.0"
-description = "Add a short description here."
+description = "Smart home energy assistant: meter readings and German wholesale prices turned into clear costs."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []

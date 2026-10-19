@@ -1,21 +1,8 @@
-# python-uv-template
+# Smart Energy Assistant
 
-Starter template for Python projects with [uv](https://docs.astral.sh/uv/),
-[Ruff](https://docs.astral.sh/ruff/) and [pytest](https://docs.pytest.org/).
+A smart home energy assistant that turns meter readings and real German wholesale prices into clear costs, and uses AI to explain your bill and tell you when to use energy most cheaply.
 
-## Using this template
-
-1. Click **Use this template** on GitHub and create your repository.
-2. Rename the project in `pyproject.toml` (`name`, `description`) and
-   replace this README.
-3. Set up the environment:
-
-   ```bash
-   uv sync
-   ```
-
-4. Add dependencies with `uv add <package>` and dev tools with
-   `uv add --dev <package>`.
+**Status:** Work in progress. Currently building the backend foundation (Django REST API, Postgres, price data import). AI features follow in later stages.
 
 ## Commands
 
@@ -32,16 +19,6 @@ For hosts that need a `requirements.txt` (e.g. PythonAnywhere):
 ```bash
 uv export --format requirements-txt --no-hashes --no-dev -o requirements.txt
 ```
-
-## What's included
-
-- Python 3.13 via `.python-version`
-- Ruff: PEP 8 line length (79, docstrings 72), import sorting, bugbear,
-  pyupgrade, simplify and pathlib rules
-- pytest with a smoke test in `tests/`
-- GitHub Actions workflow that lints, checks formatting and runs the
-  tests on every push and pull request
-- `.editorconfig`, `.gitignore` and `.env.example`
 
 ## License
 
